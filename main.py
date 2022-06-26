@@ -1,6 +1,6 @@
 from handler.execute_option import execute_option
 
-def main_loop():
+def main():
     menu_loop = True
     
     while menu_loop:
@@ -15,8 +15,9 @@ def main_loop():
             print("6. Salir")
             try:
                 option = int(input("\nPor favor ingresa la opcion a realizar: "))
-                
-                if option < 1 or option > 6:
+                min_opt = 1
+                max_opt = 6
+                if option < min_opt or option > max_opt:
                     print("\nPorfavor ingresa una de las opciones disponibles\n")
                 elif option == 6:
                     print("\nGracias por usar el programa")
@@ -27,13 +28,8 @@ def main_loop():
                     correct_option = True
             except ValueError:
                 print("\nPorfavor ingresa un numero\n")
-
-
-
-def run():
-    main_loop()
     
 
 
 if __name__ == "__main__":
-    run()
+    main()

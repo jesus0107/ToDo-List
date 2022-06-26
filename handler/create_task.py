@@ -14,7 +14,7 @@ class Task:
 
 
 def create_task():
-    task_name = input("Tarea a realizar: ")
+    task_name = input("Tarea a agregar: ")
     task_date = input("Porfavor ingresa la fecha limite para la tarea: ")
     
     task = Task(task_name, task_date)
