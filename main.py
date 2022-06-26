@@ -1,3 +1,5 @@
+from handler.execute_option import execute_option
+
 def main_loop():
     menu_loop = True
     
@@ -27,9 +29,7 @@ def main_loop():
                 print("\nPorfavor ingresa un numero\n")
 
 
-def execute_option(option):
-    print(option)
-    
+
 def run():
     main_loop()
     
